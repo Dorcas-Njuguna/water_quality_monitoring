@@ -46,7 +46,7 @@ def main():
         if i <= 2:
             sample_readings.append(reading)
 
-        # Your evaluator.is_safe might return (ok, text) or just ok
+        # evaluator is_safe might return (ok, text) or just ok
         result = evaluator.is_safe(row)
         if isinstance(result, tuple):
             ok, text = result
